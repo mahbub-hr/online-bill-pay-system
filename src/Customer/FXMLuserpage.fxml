@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="704.0" prefWidth="941.0" style="-fx-background-color: silver;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Customer.FXMLuserpageController">
+   <children>
+      <AnchorPane layoutX="23.0" layoutY="43.0" prefHeight="634.0" prefWidth="743.0" style="-fx-background-color: snow;">
+         <effect>
+            <DropShadow color="#169edb" height="42.77" radius="20.1075" width="39.66" />
+         </effect>
+         <children>
+            <ListView fx:id="listviewid" layoutX="118.0" layoutY="188.0" onMouseClicked="#on_mouse_clicked_listview" prefHeight="329.0" prefWidth="667.0">
+               <effect>
+                  <DropShadow color="#949090" height="45.88" radius="23.2175" width="48.99" />
+               </effect>
+            </ListView>
+            <Label layoutX="364.0" layoutY="141.0" text="COMPANY  LIST">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <effect>
+                  <Bloom />
+               </effect>
+            </Label>
+            <Label layoutX="361.0" layoutY="21.0" prefHeight="39.0" prefWidth="155.0" text="USER  PAGE" textFill="#47dd33">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="registerbutton" layoutX="600.0" layoutY="576.0" mnemonicParsing="false" onAction="#on_register_button" prefHeight="31.0" prefWidth="280.0" style="-fx-background-color: snow;" text="Register an Id " textFill="#e11717" underline="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

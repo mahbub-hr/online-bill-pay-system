@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1000.0" style="-fx-background-color: silver;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bill.FXMLbillpageController">
+   <children>
+      <AnchorPane layoutX="49.0" layoutY="74.0" prefHeight="773.0" prefWidth="902.0" style="-fx-background-color: Mintcream;">
+         <effect>
+            <DropShadow color="#1db5db" height="64.54" radius="30.215000000000003" width="58.32" />
+         </effect>
+         <children>
+            <ListView fx:id="listviewbillid" layoutX="209.0" layoutY="106.0" onMouseClicked="#on_mouse_clicked_listview" prefHeight="604.0" prefWidth="485.0">
+               <effect>
+                  <DropShadow color="#90c789" height="30.33" radius="15.442499999999999" spread="0.11" width="33.44" />
+               </effect>
+            </ListView>
+            <Label layoutX="273.0" layoutY="69.0" text="BILL LIST">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="584.0" layoutY="69.0" text="STATUS">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="backbutton" layoutX="733.0" layoutY="716.0" mnemonicParsing="false" onAction="#on_back_button" prefHeight="43.0" prefWidth="162.0" text="BACK">
+               <effect>
+                  <DropShadow color="#44573e" height="84.75" radius="39.932500000000005" width="76.98" />
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="482.0" layoutY="14.0" text="BILL ">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

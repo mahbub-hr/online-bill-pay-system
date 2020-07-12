@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorpaneid" onMouseEntered="#on_mouse_enter_anchorpane" prefHeight="750.0" prefWidth="649.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Customer.FXMLloginController">
+    <children>
+      <TextField fx:id="userid" alignment="CENTER" layoutX="126.0" layoutY="168.0" prefHeight="50.0" prefWidth="404.0" promptText="USER  ID">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <effect>
+            <DropShadow color="#c0d0be" height="45.0" radius="23.25" width="50.0" />
+         </effect>
+      </TextField>
+      <PasswordField fx:id="passwordid" alignment="CENTER" layoutX="126.0" layoutY="266.0" prefHeight="50.0" prefWidth="404.0" promptText="PASSWORD ">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <effect>
+            <DropShadow color="#c0d0be" height="45.0" radius="23.25" width="50.0" />
+         </effect>
+      </PasswordField>
+      <Button fx:id="loginbutton" layoutX="126.0" layoutY="378.0" mnemonicParsing="false" onAction="#on_login_button" prefHeight="44.0" prefWidth="404.0" text="LOGIN" textFill="#ed2828">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+      <Button fx:id="new_account_button" layoutX="283.0" layoutY="507.0" mnemonicParsing="false" onAction="#on_new_account" prefHeight="31.0" prefWidth="247.0" style="-fx-background-color: black;" text="CREATE NEW ACCOUNT &gt;&gt;" textFill="#eb0909" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="forgetbutton" layoutX="126.0" layoutY="450.0" mnemonicParsing="false" onAction="#on_forget_button" onMouseEntered="#on_mouse_enter_forget" prefHeight="44.0" prefWidth="404.0" style="-fx-background-color: black;" text="FORGET PASSWORD ?" textFill="#3028eb">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+    </children>
+   <effect>
+      <Glow />
+   </effect>
+</AnchorPane>
